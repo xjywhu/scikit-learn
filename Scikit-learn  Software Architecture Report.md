@@ -68,9 +68,9 @@ plt.title(u'RM与PRICE的关系', fontproperties=myfont)
 plt.show()
 ```
 
-![1569842631447](C:\Users\14764\AppData\Roaming\Typora\typora-user-images\1569842631447.png)
+<img src="/image/demo1.png" width = "50%" height = "50%" align=center />
 
-![1569842683954](C:\Users\14764\AppData\Roaming\Typora\typora-user-images\1569842683954.png)
+<img src="/image/demo2.png" width = "50%" height = "50%" align=center />
 
 ## Introduction
 
