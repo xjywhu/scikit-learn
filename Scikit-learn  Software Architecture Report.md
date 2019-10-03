@@ -68,30 +68,44 @@ plt.title(u'RM与PRICE的关系', fontproperties=myfont)
 plt.show()
 ```
 
-<img src="/image/demo1.png" width = "50%" height = "50%" align=center />
+![](image/demo1.png)
 
-<img src="/image/demo2.png" width = "50%" height = "50%" align=center />
+![](image/demo2.png)
 
 ## Introduction
 
-This chapter describes scikit-learn from the software architecture perspective. Scikit-learn is an open source library for machine learning and data mining in Python language. Due to its efficiency and simplicity, it has been one of most popular machine learning tools. Besides, it can support many run-time environments. Considering its open-source property, the component of its developing member is complex. It’s necessary to do a software analysis for it.
+Scikit-learn is a classical algorithm frame, which begins from Google Summer of Code in 2007. It’s a simple and efficient library and supplies many algorithms for unsupervised training and supervised training to
+finish data mining and analysis. Its algorithm almost includes all fields of machine learning, which indicates the importance of the project. The algorithm library is based on Scipy so that you must download Scipy before using scikit-learn. Besides, the frame also has Numpy, matlibplot, IPython, Sympy and Pandas as
+dependence. Comparing to another famous algorithm frame, tensorflow, scikit-learn pays more attention to the module of algorithms. It’s convenient to use functions or modules in scikit-learn.
 
 ### Power-interest grid
 
-Figure 3 shows the quadrants of power and interest of scikit-learn stakeholders. The x-axis determines interest of stakeholders to scikit-learn which is divided into low and high interest. The interest of stakeholders is demonstrated by their willingness to explore, use, or contribute to the library. The y-axis determines the power of stakeholders which is also divide   into low and high power. Power is related to how influential the stakeholder is in scikit-learn's past, current, and future development. For example, the most important party of the stakeholders is the core developer team like in Figure1. They have responsibility for the project, so I think they should in upper-right area. On the other hand, students in Figure2, who had worded for the project, don’t work for the project in full time. I think they can be regarded as high-interest and low-power.
+1.
 
-![1569843074193](C:\Users\14764\AppData\Roaming\Typora\typora-user-images\1569843074193.png)
+Figure 3 shows the quadrants of power and interest of scikit-learn stakeholders. The x-axis determines interest of stakeholders to scikit-learn which is divided into low and high interest. The interest of stakeholders is demonstrated by the profit which they can get from the project. The y-axis determines the power of stakeholders which is also divide into low and high power. Power is related to how influential the stakeholder is in scikit-learn's past, current, and future development.
 
+2.
+
+In Figure 2, I divide the stakeholders into fours parts.
+
+Core Developers: I think they should be “Manage Closely”, because the project is almost developed by them. They have rights and responsibility and may get profits from it. So, the interest and power of them must be high
+
+Acquirers: They make decisions, offer the needed funding and profit from the project. The interest and power of them are also high.
+
+Users: Comparing to other roles, user may have low power for the project. Because they are a broad concept. But as users, they are willing to use the project, so the interest of them must be high.
+
+Suppliers: They offer the sufficient support for the project. But the suppliers are not a positive role which means the support may be not launched by them. So I think the power and interest of them should be low.
+
+Contributor: They support money, some of whom manage the code and write the document. I also think they have high power, and high interest.
+
+Funders: They can get right to use the product and profit of money gained but the product. So, they have high power and interest.
+
+Competitors: I think the competitors have low power because they can’t decide for the project directly. However, the interest may have high interest because the similar project may give them some idea and they are willing to use and explore the scikit-learn.
+
+![](image/introduction1.png)
 <center>Figure 1</center>
-
-![1569843236191](C:\Users\14764\AppData\Roaming\Typora\typora-user-images\1569843236191.png)
-
+![](image/introduction2.png)
 <center>Figure 2</center>
-
-![1569843267194](C:\Users\14764\AppData\Roaming\Typora\typora-user-images\1569843267194.png)
-
-<center>Figure 3</center>
-
 ## Stakeholders Analysis
 
 ### Core team members & contributors
@@ -100,71 +114,93 @@ In this section, According to Wikipedia,Stakeholder means an group,corporate,org
 
 #### Acquirers
 
-Acquirer through certain procedures and means to obtain part or all of the ownership of an enterprise's investment behavior buyers can generally complete the acquisition through cash or stock acquired the actual control of the acquired enterprise international enterprise takeover is the result of transnational equity takeover or merger. So some enterprises wants to support or make an acquisition about scikit-learn and get benefit in return. Such as INRIA , Paris-Saclay Center for Data Science, NYU Moore-Sloan Data Science Environment, Télécom Paristech, Columbia University, Google, Tinyclues. 
+Acquirers are always connected with acquisition that is an economic activity through which a company acquires a degree of control over another company in order to achieve an economic goal.
+
+For scikit-learn,acquirers offer the needed funding for the development of the system and maybe need to make a decision about purchasing the it and profit from it .Some of the examples are Columbia University,Google and INRIA. 
 
 #### Assessors
 
-The reviewers evaluate whether the operation of the system meets the requirements and conforms to the law, and whether it is beneficial to the development of the system when the system needs to make changes, when scikit-learn faces some advice,they need to judge whether it suits the system’s functions and aim.
+Assessors evaluate and demonstrate the plan to decide whether to adopt or not.
+
+For scikit-learn,assessors evaluate whether the operation of the system meets the requirements and conforms to the law,and whether it is beneficial to the development of the system when there are some advice about the system. All in all,they need to decide if those advice are meant to applied. Examples in this system : Decisions about the future of the project are made through discussion with all members of the community. All non-sensitive project management discussion takes place on the project contributors’ [mailing list](mailto:scikit-learn@python.org) and the [issue tracker](https://github.com/scikit-learn/scikit-learn/issues). Occasionally, sensitive discussion occurs on a private list.
 
 #### Communicators
 
-They are able to absorb and express ideas in a variety of words with confidence and sensitivity, they are
-responsible for explaining the functions of the scikit-learn to others and helping others install and operate the system. In the same time,they need to write and use documentation, official documentation, API documentation, etc. In the scikit-learn,There are several communication channels besides the website, such as Stack Overflow, a mailing list, and an IRC channel.
+Communicators are responsible for talking with others including explaining, teaching, negotiating, responding. Everything associated with outward words are about communicators.
+
+For scikit-learn,communicators are responsible for explaining the functions of the system to others and helping others install and operate the system. In the same time,they need to write and use documentation, official documentation, API documentation, etc. Examples in this system: members of the community, users like college students of the system who will introduce the system to their friends and connected companies.
 
 #### Developers
 
-The developer is responsible for developing the complete scikit-learn from a vague concept,which refers to and include the people in GitHub to design,develop,release and maintain the system,who are founded by acquirers. They need to identify every detail of the software and fix any bugs to confirm the system can operate normally.
+Developers are the main group for the specific software development,they are responsible for the whole procedure of the system from idea,designing,developing and modifying.
+
+For scikit-learn,The developers need to identify every detail of the software and develop the complete system from a vague concept. Also they need to confirm the system that it can operate normally after all the developing things. Examples in the system: Thomas J Fan,Alexandre Gramfort,Olivier Grisel.etc.
 
 #### Maintainers
 
-Maintainers is aimed at the daily maintenance of scikit-learn, to ensure the normal operation of software and emergency backup recovery and other measures like system maintenance, regular inspection, whether the software is normal operation, regular backup, clean up garbage information and so on. In scikit-learn,the job is mainly performed by Andreas Müller,with some others who are willing to maintain the documentation and code of the library in GitHub.
+Maintainers’ main job is about software modifications that are made after the release of a product to improve performance or other attributes due to bug fixes.
+
+For scikit-learn,Maintainers are aimed at the daily maintenance of scikit-learn to ensure the normal operation of software and emergency backup recovery and other measures like system maintenance, regular inspection, whether the software is normal operation, regular backup, clean up garbage information and so on,or maybe sometimes algorithm need to improved,which is also the job of maintainers. Examples in the system: the job is mainly performed by Andreas Müller,with some others who are willing to maintain the documentation and code of the library in GitHub.
 
 #### Production engineers
 
-Product engineer generally belong to the category of technology department is responsible for product technical support, especially when new product development is generally with product engineer, the main task of the product engineer, is to make the process smooth and fluent, to ensure the production process of each gear tightly clasped and can make the products according to the schedule listed, even to shorten the time of design to production, strive for more market. In scikit-learn,Andreas Müller performs this role as a release manager. Staff in the companies who use scikit-learn can also fall under this,they are responsible for the work of design,deploy and manage the hardware including software environment.
+The main task of the production engineer is to make the process smooth and smooth, ensure that every gear in the production process is closely connected, so that the product can be launched according to the schedule, and even shorten the time from design to mass production, so as to win more market.
+
+For scikit-learn,production engineers generally belong to the category of technology department who are responsible for product technical support of the system. In some way,they need to adjust the environment of the hardware and software to ensure the normal running. Examples in the system: Andreas Müller as a release manager,is to do the mainly manage work. Also some staff in the companies who use scikit-learn and some volunteers in the GitHub help a lot.
 
 #### Suppliers
 
-The suppliers are responsible for providing the necessary hardware and software, as well as providing personnel to participate in development and maintenance as needed. In scikit-learn,some of the suppliers are:
+Suppliers are those people or company who offer the sufficient support to a project.
 
-- Rackspace: Provides cloud services for automatically building documentation.
-- Shining Panda: Provides CPU time on continuous integration servers.
-- GitHub: Provides hosting of version control
-- Acquirers of project: Some provide funding to developers.
-
-#### Support staffs
-
-Support staffs are supposed to provide sufficient support to the normal operation of the system,at the same time,support staffs and communicators are both in the similar function and group in scikit-learn,they both need to help others understand the function of the system and help people use it. 
+For scikit-learn,suppliers offer hardware and software to the development of the system. Some of them offer people and platform,some offer technology to help build environment,others offer software to test the algorithm,etc. Examples in the system: Rackspace provide with a free [Rackspace Cloud](https://www.rackspace.com/cloud/) account to automatically build the documentation with the example gallery;[Shining Panda](http://shiningpanda.com/) provide free CPU time on their Continuous Integration server.
 
 #### System administrator
 
-System Administrator are mainly responsible for the whole system administrator related books system administrator related books network equipment and server system design installation configuration management and maintenance work, for the safe operation of the Intranet do technical support. Who also responsible for the daily management and maintenance of the specific information system, with the highest management authority of the information system. In scikit-learn,users will suppose that it will operate in any system,so system administrator are the people who are responsible for this.
+The system administrator is mainly responsible for the design, installation, configuration management and maintenance of the network equipment and server system of the entire network. Also,they are responsible for the daily management and maintenance of the specific information system, with the highest management authority of the information system.
+
+For scikit-learn,system administrator need to help users to run this python software at the very system they want. Examples in the system: Adrin Jalali,Guillaume Lemaitre are the main administrator of the system.
 
 #### Testers
 
-The tester will continuously test the features on the eve of release to ensure the integrity and correctness of all features. In scikit-learn,testers will test the system to find whether the function is suitable for users to deployment,at the same time. When an new function or modification has been applied to the system,testers will use a high-coverage test to ensure they will perform well. Also some devices will help test the system without people’s work.
+Testers are responsible for the process of operating a program under specified conditions to detect program errors, measure software quality, and evaluate whether it meets design requirements.
+
+For scikit-learn,testers are not only means some people who test databases and algorithm or other conventional functions,but also some devices or programs that can help test without people. Examples in the system: continuous integration tools like Jenkins will help people in community to test all the needs.
 
 #### Users
 
-For scikit-learn, users are those who operate the system in the very end, including some corporations and research team like Spotify, betaworks, evernote, booking.com, AWeber, YHat, INRIA,or some college team and some individual user with the aim of data analysis.
+Users,are persons who uses a computer or Internet service,also companies or some scientific group may also be the users,which is a broad concept.
+
+For scikit-learn,users are those who operate system by them selves or may take advantage of the system to help analyze the date. Due to scikit-learn is a system of  python,the users of it are from the every aspect about the Internet. Examples in the system: Individual users in computer programming;college students who are in the scientific group;college management in Wuhan university.
+
+
 
 ### Additional stakeholders
 
-According to the categorization of stakeholders in the method proposed by Rozanski & Woods,But we can find many other stakeholders besides the main ones. Here are the some less mainly categories: contributors, users, funders and competitors.
+Except for the main stakeholders of the method proposed by Rozanski & Woods,there are lots other stakeholders which are also really important. Here are those categories:
 
 #### Contributors
 
-In scikit-learn,contributors means every one included the things about the system, a fairly large number of whom are those who are in GitHub and join the system. According to a data,in March 2017, there were 798 contributors on the GitHub repository of scikit-learn,many of them. They actively ask questions, participate in the development and maintenance of the system, and in addition to the main developers, they are the main supporters and developers of the system. To some extent, they also have a good understanding of the architecture, goals, attributes, and development prospects of the system.
+Contributors are those who support the specific project with their money,physical power,wisdom or anything else.
 
-#### Users
+For scikit-learn,contributors are the largest group,some of whom support it with money,some of whom join the GitHub to manage the code and write the document,others help maintain the code or even in the class of the development.
 
-Unlike previous users, this includes everyone who USES the system, which includes the acquires above. On the one hand, they use the system to achieve their own purposes such as data analysis, on the other hand, they are also concerned about the existing problems and development prospects of the system. Just
-the same as the contributors,To a certain extent, they also have an understanding of the integrity and usability of the program and are concerned about the simplicity and reusability of the code.
+Examples in the system: Volunteers in the GitHub who join the code and have a raising; Big company like INRIA have a funding to the system,etc.
 
 #### Funders
 
-Funders are people who provide various kinds of support to the system. They can provide financial support in return for a certain amount of return. They can also provide the necessary hardware, software and platform for development. For example,individual funder may want to get the preferential use right or private right and some functions other users will not have. Company funder may want the profit percentage after the system has been released. And research group founder may want the develop group have some collaboration with their research projects. An example of this would be INRIA.
+Funders are those who give a supporting to the development of the project,the supporting maybe material or spiritual. In return,they can get the right to use the product ahead of schedule or some percentage profit of the money gained by the product or some other benefit.
+
+For scikit-learn,funders always offer the sufficient money support to help the development of the system,or the right of use of some device to help test or running.
+
+Examples in the system:[INRIA](https://www.inria.fr/) actively supports this project;[Columbia University](https://columbia.edu/) funds Andreas Müller since 2016;[The University of Sydney](https://sydney.edu.au/) funds Joel Nothman since July 2017,etc.
 
 #### Competitors
 
-For scikit-learn,competitors are those who work with the similar function system with scikit-learn, who wants to know the machine learning algorithm of it,on the one hand ,they want to know whom have the better algorithm which have a better market, on the other hand, they also wants to learn something their system doesn’t have. Examples of competitors are GraphLab
+Competitors generally refer to other enterprises that provide similar products or services and serve similar target customers
+
+For scikit-learn,competitors are other system who provided the similar machine learning algorithm libraries which can get to the same outcome with it. Examples in the system: GraphLab,which is a library in C++.
+
+![](image/stakeholder1.png)
+![](image/stakeholder2.png)
+![](image/stakeholder3.png)
+
